@@ -22,7 +22,7 @@
       <UserItem />
     </header>
 
-    <main class="grid gap-4 md:border rounded p-6">
+    <main class="grid gap-4 md:border rounded p-6 min-w-full">
       <Tabs :default-value="settings[0].name" class="w-full">
         <TabsList>
           <TabsTrigger

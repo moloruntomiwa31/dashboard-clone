@@ -2,7 +2,7 @@ import { ListFilterIcon } from "lucide-vue-next";
 import { Button } from "~/components/ui/button";
 import AlertDialog from "./components/ui/alert-dialog/AlertDialog.vue";
 
-const statusColors = {
+const statusColors: { [key: string]: string } = {
   Pending: "bg-orange-500",
   Completed: "bg-green-500",
   Cancelled: "bg-red-500",
@@ -163,7 +163,7 @@ export const columns: ColumnDef<Payment>[] = [
           Button,
           {
             click: handleButtonClick,
-            class: "w-[100px]",
+            class: "w-full",
           },
           {
             default: () => action,

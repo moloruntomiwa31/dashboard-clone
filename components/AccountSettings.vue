@@ -11,7 +11,7 @@
     </div>
     <div class="grid md:grid-cols-2 gap-4">
       <div v-for="field in inputFields" :key="field.label">
-        <Label>{{ field.label }}</Label>
+        <Label class="text-lg">{{ field.label }}</Label>
         <Input class="min-w-[350px]" :placeholder="field.placeholder" :type="field.type" />
       </div>
     </div>
@@ -23,19 +23,19 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 const inputFields = [
   {
-    label: "Your email address",
+    label: "Email address",
     value: "",
     placeholder: "Enter your email address",
     type: "email",
   },
   {
-    label: "Your password",
+    label: "Password",
     value: "",
     placeholder: "Enter your password",
     type: "password",
   },
   {
-    label: "Your username",
+    label: "Username",
     value: "",
     placeholder: "Enter your username",
     type: "text",

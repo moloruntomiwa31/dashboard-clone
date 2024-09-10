@@ -2,7 +2,7 @@
   <div class="grid gap-4">
     <header class="flex items-center justify-between">
       <div class="grow">
-        <h1>Dashboard</h1>
+        <h1>Overview</h1>
         <p class="text-sm">Here is the information about all your orders</p>
       </div>
       <div class="flex items-center justify-between">
