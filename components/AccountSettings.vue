@@ -12,7 +12,7 @@
     <div class="grid md:grid-cols-2 gap-4">
       <div v-for="field in inputFields" :key="field.label">
         <Label class="text-lg">{{ field.label }}</Label>
-        <Input class="min-w-[350px]" :placeholder="field.placeholder" :type="field.type" />
+        <Input class="min-w-[200px] xl:min-w-[350px]" :placeholder="field.placeholder" :type="field.type" />
       </div>
     </div>
   </div>

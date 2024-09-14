@@ -12,6 +12,7 @@
           v-for="item in items"
           :key="item.title"
           :to="item.path"
+          @click="close"
           class="px-2 py-1 transition rounded cursor-pointer relative text-gray-600 dark:text-white"
           :class="
             item.title == 'Checkout' ? 'flex items-center justify-between' : ''
@@ -63,6 +64,13 @@ const items = ref([
     icon: "ri:settings-line",
   },
 ]);
+const emit = defineEmits<{
+  (e: "close"): void;
+}>();
+
+const close = () => {
+  emit("close")
+}
 </script>
 
 <style scoped>

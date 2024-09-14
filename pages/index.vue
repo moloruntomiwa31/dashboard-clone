@@ -1,34 +1,19 @@
 <template>
   <div class="grid gap-4">
-    <header class="flex items-center justify-between">
+    <header class="flex flex-col items-start md:flex-row  md:items-center justify-between">
       <div class="grow">
         <h1>Overview</h1>
         <p class="text-sm">Here is the information about all your orders</p>
-      </div>
-      <div class="flex items-center justify-between">
-        <Icon name="ic:outline-search" color="black" size="20" />
-        <div class="relative">
-          <div
-            class="w-1 h-1 rounded-full bg-red-600 absolute top-0 right-0"
-          ></div>
-          <Icon
-            name="clarity:notification-line"
-            color="black"
-            size="20"
-            class="ml-4"
-          />
-        </div>
       </div>
       <UserItem />
     </header>
 
     <main class="grid gap-4">
-      <div class="grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4 place-items-start">
+      <div class="grid gap-4 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-start">
         <Card
           v-for="(item, index) in cards"
           :key="index"
           :card="item"
-          :style="{ backgroundColor: item.color }"
         />
       </div>
       <div class="min-w-full">

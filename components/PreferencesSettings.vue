@@ -19,7 +19,7 @@
           v-model="field.value"
           :placeholder="field.placeholder"
           required
-          class="min-w-[350px]"
+          class="min-w-[200px] xl:min-w-[350px]"
         />
         <Select
           v-else

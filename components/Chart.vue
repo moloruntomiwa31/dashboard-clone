@@ -1,6 +1,6 @@
 <template>
-  <div class="grid gap-6 md:grid-cols-2">
-    <div class="border p-4 rounded-lg grow w-1/2 md:w-full">
+  <div class="grid gap-4 md:grid-cols-2">
+    <div class="border p-4 rounded-lg grow md:w-full">
       <ClientOnly v-if="chartReady">
         <apexchart
           :key="chartKey"
@@ -12,7 +12,7 @@
       </ClientOnly>
       <Skeleton class="w-[100%] h-[300px] rounded" v-else />
     </div>
-    <div class="border p-4 rounded-lg w-1/2 md:w-full">
+    <div class="border p-4 rounded-lg md:w-full">
       <!-- Additional content can go here -->
       <ClientOnly v-if="chartReady">
         <apexchart

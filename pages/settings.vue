@@ -1,23 +1,9 @@
 <template>
   <div class="grid gap-4">
-    <header class="flex items-center justify-between">
+    <header class="flex flex-col items-start md:flex-row  md:items-center justify-between">
       <div class="grow">
         <h1>Settings</h1>
         <p class="text-sm">Modify your settiings here.</p>
-      </div>
-      <div class="flex items-center justify-between">
-        <Icon name="ic:outline-search" color="black" size="20" />
-        <div class="relative">
-          <div
-            class="w-1 h-1 rounded-full bg-red-600 absolute top-0 right-0"
-          ></div>
-          <Icon
-            name="clarity:notification-line"
-            color="black"
-            size="20"
-            class="ml-4"
-          />
-        </div>
       </div>
       <UserItem />
     </header>

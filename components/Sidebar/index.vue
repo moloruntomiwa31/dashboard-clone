@@ -20,7 +20,7 @@
           name="material-symbols:close"
           @click="open = false"
         />
-        <SidebarMenu />
+        <SidebarMenu @close="open = false"/>
       </div>
     </div>
     <div
