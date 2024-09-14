@@ -3,7 +3,6 @@
     <header class="hover:scale-[101%] transition cursor-pointer">
       <div class="flex items-center p-4 gap-2">
         <Logo />
-        <p class="font-bold text-black leading-4 dark:text-white">Aeon</p>
       </div>
     </header>
     <div class="grow">
